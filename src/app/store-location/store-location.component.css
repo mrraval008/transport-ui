@@ -1,0 +1,18 @@
+p {
+    font-family: Lato;
+  }
+  
+  #root {
+    padding: 30px;
+  }
+  
+
+  .btn-primary{
+    margin-right: 20px;
+  }
+  .refetch{
+    background-color: #c33939;
+    border-color: #eea236;
+    margin-right: 20px;
+  }
+  

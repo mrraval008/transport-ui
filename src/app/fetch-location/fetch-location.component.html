@@ -1,0 +1,16 @@
+<div class="container">
+
+  <select class="form-select" aria-label="Default select example" [(ngModel)]="selectedArea">
+    <option *ngFor="let lData of locationData" [ngValue]="lData">{{lData.areaName}}</option>
+  </select>
+  <select class="form-select" aria-label="Default select example" [(ngModel)]="selectedShop" >
+    <option selected> -- select an shop -- </option>
+    <option *ngFor="let sData of selectedArea?.shopData" [ngValue]="sData">{{sData.shopName}}</option>
+  </select>
+  <a target="_blank" href="{{'https://www.google.com/maps/search/?api=1&query='+ selectedShop.location}}"> Redirct To
+    Map</a>
+
+    <!-- <iframe [src]="{{'https://www.google.com/maps/search/?api=1&query='+ selectedShop.location}}" height="500px" width="100%" title="Iframe Example"></iframe> -->
+
+</div>
+
